@@ -1,5 +1,7 @@
 package MySockets;
 
+import org.apache.commons.io.IOUtils;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -31,7 +33,7 @@ public class Server {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            IoUtil.closeQuietly(sSocket);
+            IOUtils.closeQuietly(sSocket);
         }
     }
 }

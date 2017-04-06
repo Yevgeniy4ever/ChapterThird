@@ -1,8 +1,8 @@
 package MySockets;
 
-import sun.misc.IOUtils;
 
-import java.io.IOException;
+import org.apache.commons.io.IOUtils;
+
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
@@ -38,7 +38,7 @@ public class Client {
         } catch (Exception ex){
             ex.printStackTrace();
         } finally {
-            IoUtil.closeQuietly(socket);
+            IOUtils.closeQuietly(socket);
         }
     }
 }
