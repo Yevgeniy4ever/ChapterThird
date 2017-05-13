@@ -8,7 +8,7 @@ import java.io.*;
 public class CopyTxtFilesSecond {
     String way = "D:\\text.txt";
     String way2 = "D:\\text1.txt";
-    char ch;
+    int ch;
     PrintWriter pw = new PrintWriter(System.out, true);
 
     CopyTxtFilesSecond(String name1, String name2){
@@ -20,12 +20,12 @@ public class CopyTxtFilesSecond {
         try (BufferedReader f1 = new BufferedReader(new FileReader(way));
              FileWriter f2 = new FileWriter(way2)){
         do{
-            ch = (char) f1.read();
+            ch = f1.read();
             pw.println(ch);
             if (ch == ' ')
                 ch = '+';
             f2.write(ch);
-        } while (ch != null);
+        } while (ch != -1);
 
         } catch (FileNotFoundException ex) {
             System.out.println(ex);
@@ -35,6 +35,7 @@ public class CopyTxtFilesSecond {
             System.out.println(ex);
         }  return true;
     }
+
 }
 
 class CopyTextStartSecond{
