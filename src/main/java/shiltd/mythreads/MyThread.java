@@ -39,7 +39,8 @@ class UseThreads{
         newThread.start();
 
         for (int i = 0; i < 50; i++){
-            pw.println(i);
+            pw.print('.');
+            pw.flush();
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
