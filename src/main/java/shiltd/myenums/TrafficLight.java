@@ -8,7 +8,6 @@ public enum TrafficLight {
 }
 
 class TrafficLightDemo{
-    TrafficLight trArray[];
     TrafficLight trObj;
     TrafficLight defaultColor;
     String name;
