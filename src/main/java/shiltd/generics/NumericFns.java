@@ -26,6 +26,6 @@ class BoundsDemo{
 
         NumericFns<Integer> iOb = new NumericFns<Integer>(5);
 
-        System.out.println("reciprocal is " + rec);
+        System.out.println("reciprocal is " + iOb.reciprocal());
     }
 }
