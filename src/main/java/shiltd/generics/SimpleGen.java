@@ -24,7 +24,7 @@ class RawDemo{
         SimpleGen raw = new SimpleGen(new Double(98.6));
 
         double d = (Double) raw.getOb();
-        System.out.println("value is " + d);
+        System.out.println("value i s " + d);
 
         //int i = (Integer) raw.getOb();
         strOb = raw;
