@@ -7,7 +7,4 @@ public interface ICharQ {
     void put(char ch);
     char get();
 
-    default int getInt(){
-        return 1;
-    }
 }

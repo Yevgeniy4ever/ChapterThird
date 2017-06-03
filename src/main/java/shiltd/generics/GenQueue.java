@@ -14,22 +14,18 @@ public class GenQueue<T> implements IGenQ<T> {
         putloc = getloc = 0;
     }
 
-
-/*    public T[] getQueue(){
-
-    }*/
-
     public void putObj(T o) throws QueueFullException{
         if (putloc == queue.length)
             throw new QueueFullException(queue.length);
-        obj = o;
+        queue[putloc] = o;
         putloc ++;
     }
 
     public T getObj() throws QueueEmptyException{
-        if (getloc == 0 && queue[getloc] == null)
+        if (getloc == putloc)
             throw new QueueEmptyException();
-        getloc--;
+        obj = queue[getloc];
+        getloc++;
         return obj;
     }
 
