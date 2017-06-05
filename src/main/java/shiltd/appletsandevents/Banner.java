@@ -19,6 +19,11 @@ public class Banner extends Applet implements Runnable{
         t = null;
     }
 
+    @Override
+    public void showStatus(String msg) {
+        super.showStatus(msg);
+    }
+
     public void start(){
         t = new Thread(this);
         stopFlag = false;
