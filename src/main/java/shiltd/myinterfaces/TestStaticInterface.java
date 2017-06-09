@@ -1,6 +1,6 @@
 package shiltd.myinterfaces;
 
-import shiltd.Vehicle;
+import shiltd.simpleconstractions.Vehicle;
 
 /**
  * Created by Developer on 4/21/2017.

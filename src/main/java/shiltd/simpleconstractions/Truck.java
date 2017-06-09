@@ -1,9 +1,9 @@
-package shiltd;
+package shiltd.simpleconstractions;
 
 /**
  * Created by Developer on 4/17/2017.
  */
-public class Truck extends Vehicle{
+public class Truck extends Vehicle {
     private int cargocap;
 
     Truck(int p, int f, int m, int c) {

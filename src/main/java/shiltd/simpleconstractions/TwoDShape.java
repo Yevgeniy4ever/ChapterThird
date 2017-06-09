@@ -1,4 +1,4 @@
-package shiltd;
+package shiltd.simpleconstractions;
 
 /**
  * Created by Developer on 4/17/2017.
