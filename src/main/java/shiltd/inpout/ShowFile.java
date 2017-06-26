@@ -1,4 +1,4 @@
-package inpout;
+package shiltd.inpout;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

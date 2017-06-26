@@ -22,7 +22,7 @@ public class ListDemo implements ListSelectionListener {
         gList = new JList<>(ar);
         gList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         scrollPane = new JScrollPane(gList);
-        scrollPane
+
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
