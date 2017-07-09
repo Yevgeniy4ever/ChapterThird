@@ -1,0 +1,10 @@
+<class name="Event" table="EVENTS">
+    ...
+</class>
+
+<id name="id" column="EVENT_ID">
+...
+</id>
+
+<property name="date" type="timestamp" column="EVENT_DATE"/>
+<property name="title"/>
